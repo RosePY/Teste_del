@@ -161,4 +161,4 @@ jobs:
           git add leaderboard/leaderboard.csv
           git add leaderboard/leaderboard.md
           git commit -m "Update leaderboard"
-          git push https://${BOT_TOKEN}@github.com/abdksm/PROVEN-GNN.git main
+          git push https://${BOT_TOKEN}@github.com/RosePY/Teste_del.git main
