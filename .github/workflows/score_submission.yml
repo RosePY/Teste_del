@@ -78,11 +78,11 @@ jobs:
       # 7 Decrypt submission
       - name: Decrypt submission
         env:
-          PRIVATE_KEY: ${{ secrets.SUBMISSION_PRIVATE_KEY }}
+          SUBMISSION_PRIVATE_KEY: ${{ secrets.SUBMISSION_PRIVATE_KEY }}
         run: |
           # 1. Create the private key file
           cat <<EOF > extra/private_key.pem
-          $PRIVATE_KEY
+          $SUBMISSION_PRIVATE_KEY
           EOF
           
           # 2. Decrypt the key and STRIP ALL HIDDEN WINDOWS CHARACTERS
@@ -94,7 +94,7 @@ jobs:
           python extra/decrypt.py submissions/predictions.csv.enc 
           
           # 4. Immediate cleanup
-          rm extra/private.pem extra/key.txt
+          rm extra/private_key.pem 
 
       # 8 Validate submission
       - name: Validate submission
