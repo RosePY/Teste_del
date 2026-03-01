@@ -8,18 +8,18 @@ This folder is where you place your submission files
 
 ### 1. `predictions.csv`
 
-Your model predictions must follow this format:
+Your model predictions must follow this format (you can see a sample on `data/public/sample_submission.csv`):
 
 ```csv
 id,y_pred
-0,1
-1,0
-2,1
+1,1
+2,0
+3,1
 ...
 ```
 
 * `id` — integer index of the test function
-* `y_pred` — 1 if vulnerable, 0 if non-vulnerable
+* `y_pred` — 1 if ASD, 0 if TC
 
 ---
 
