@@ -4,7 +4,7 @@ This folder is where you place your submission files
 
 ---
 
-## 1️⃣ Required Files
+## Required Files
 
 ### 1. `predictions.csv`
 
@@ -39,10 +39,11 @@ Contains metadata about your submission:
 
 ---
 
-## 2️⃣ How to Submit
+## How to Submit
 
-1. Place your `predictions.csv` and `metadata.json` in this `submissions/` folder
-2. Commit and push your changes to your forked repository
-3. Create a **Pull Request** to the main repository
-4. GitHub Actions will automatically evaluate your submission
-5. Your results will be posted as a comment and added to the leaderboard
+1. Encrypt your `predictions.csv` using: ``` python  extra/encrypt.py predictions.csv ```
+2. Place your `predictions.csv.enc` and `metadata.json` in this `submissions/` folder
+3. Commit and push your changes to your forked repository
+4. Create a **Pull Request** to the main repository
+5. GitHub Actions will automatically evaluate your submission
+6. Your results will be posted as a comment and added to the leaderboard
